@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ec5ac47920.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="headikng">Password Generator</h1>
+    <div class="container">         
+        <form action="#">
+            <input type="text" id="input" placeholder="Your Password Here" autocomplete="off" spellcheck="false">
+            <button id="copy" title="copy" ><i class="fa-regular fa-copy"></i></button> 
+        </form>
+        <input type="range" id="range" value="8" min="1" max="20" oninput="onrange()" required>
+        <div class="restriction">
+            <div class="contain" id="containupper">
+                <label for="uppercase">UPPERCASE</label>
+                <input id="uppercase" type="checkbox">
+              </div>
+              <div class="contain" id="containlower">
+                <label for="lowercase">LOWERCASE</label>
+                <input id="lowercase" type="checkbox" checked>
+              </div>
+              <div class="contain" id="containnumbers">
+                <label for="numbers">SYMBOLS</label>
+                <input id="numbers" type="checkbox">
+              </div>
+              <div class="contain" id="containsymbols">
+            <label for="symbols">NUMBERS</label>
+                <input id="symbols" type="checkbox">
+              </div>
+        </div>
+
+        
+    
+
+  
+        <span  class="showlength" id="showlength">Password Length: 8</span>
+        <span class="strong" id="strong"></span>
+        <button id="p-btn">Generate Password</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+height:70vh;
+width:100%; 
+background: #2d4e3e;
+position: relative;
+flex-direction: column;
+}
+.container{
+    position:relative;
+    border-radius:20px;
+    width:50%;
+    height:50vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap;  */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8)inset,
+    5px 5px 10px rgba(0,0,0,0.8) ;
+}
+.container #p-btn{
+    width:80%;
+    margin:20px;
+    height:40px;
+    background: transparent;
+    font-size:20px;
+    border-radius: 10px;;
+    cursor: pointer;
+    /* padding:20px 20px; */
+    position: relative;
+}
+form {
+    margin-top:20px;
+}
+form input{
+    width:300px;
+    height:50px;
+border:none;
+outline:none;
+background: transparent;
+border-bottom:2px solid #111;
+font-size: 20px;
+padding:10px;
+line-break: 100px;
+text-align: center;
+}
+form #copy{
+    height:40px;
+    width:70px;
+    outline:none;
+background: transparent;
+cursor:pointer;
+font-size:20px;
+padding:10px;
+border-radius: 20px;
+color:wheat;
+}
+
+
+form #copy:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(14, 74, 193);;
+}
+.container #p-btn:hover{
+    color:white;
+    background-color: green;
+}
+
+.container .showlength{
+    color:#fff;
+    font-size:20px;
+    letter-spacing: 3px;
+}
+
+.container .strong{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.restriction{
+    display: flex;
+}
+.restriction .contain{
+    margin:10px;
+}
